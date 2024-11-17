@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play Example</title>
+</head>
+<body>
+    <h1>Audio Play Example</h1>
+    <button id="playAudio">Play Audio</button>
+    <button id="pauseAudio">Pause Audio</button>
+    <button id="stopAudio">Stop Audio</button>
+
+    <script>
+        // Define the audio file
+        const playlist = [
+            { title: "Song 1", file: "GUMAAN - Young Stunners _ Talha Anjum _ Talhah Yunus _ Prod. By Jokhay (Official Music Video).mp3" },
+            { title: "Song 2", file: "song2.mp3" },
+            { title: "Song 3", file: "song3.mp3" }
+        ];
+
+        // Play audio
+        function playAudio() {
+            File.play();
+        }
+
+        // Pause audio
+        function pauseAudio() {
+            audio.pause();
+        }
+
+        // Stop audio (pause and reset time)
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0; // Reset to the beginning
+        }
+
+        // Event listeners for buttons
+        document.getElementById('playAudio').addEventListener('click', playAudio);
+        document.getElementById('pauseAudio').addEventListener('click', pauseAudio);
+        document.getElementById('stopAudio').addEventListener('click', stopAudio);
+    </script>
+</body>
+</html>

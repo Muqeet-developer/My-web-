@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+         margin: 0;
+           padding: 0;
+}
+body{
+ margin: 0;
+ padding: 0;
+background-color: bisque;
+ }
+ nav{
+  font-family: 'ubuntu', sans-serif;
+ }
+ nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: white;
+ }
+
+ nav ul li {
+    padding: 0 12px;
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+ body{
+    background-color: antiquewhite;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ nav{
+  font-family: 'ubuntu', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+ }
+ nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    color: white;
+ }
+ li{
+   margin: 10px;
+   padding: 20px;
+ }
+
+ nav ul li {
+    padding: 0 12px;
+    float: right;
+ }
+ .brand {
+   display: flex;
+ }
+ .brand > p{
+   margin-top: 30px;
+   margin-left: 20px;
+ }
+ .img{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    
+    
+ }
+ .song{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 400px;
+    height: 50px;
+    margin-left: 29px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+
+ }
+.song > h1{
+    margin-left: 20px;
+ }
+ a{
+    text-decoration: none;
+ }
+ .Young {
+margin-left: 50px;
+margin-bottom: 50px;
+ }
+ .brand2 > img{
+height: 200px;
+width: 200px;
+}
+.fs-1{
+   color: black;
+}
+.fs-2{
+   color: white;
+}
+.song{
+   width: 100%;
+   height: 100px;
+   margin-left: 50%;
+   
+}
+body{
+   text-align: center;
+   justify-content: center;
+}
+.song0contanier{
+   margin-left: 30%;
+}
+    </style>
+    <link rel="stylesheet" href="stylr.css">
+</head>
+<body>
+   <nav>
+      <i class="brand">
+        <img src="brand-removebg-preview.png" height="100px" alt="spotify">
+        <p class="fs-2">MUSIC WEB</p>
+      </i>
+        <ul>
+            <li>
+               <a href="../index.html"> Home</a>
+            </li>
+        </ul>
+    </nav>
+   <div class="song0contanier">
+      <div class="song">
+         <audio id="myAudio3" src="GUMAAN - Young Stunners _ Talha Anjum _ Talhah Yunus _ Prod. By Jokhay (Official Music Video).mp3"></audio>
+         <h1>Guman</h1>
+         <button class="btn1" onclick="playAudio3();">play</button>     
+       </div>
+     <div class="song">
+         <audio id="myAudio2" src="AUR - Tu hai kahan (Lyrics).mp3"></audio>
+         <h1>TO Haein kaha</h1>
+         <button class="btn1" onclick="playAudio2();  ">play</button>  
+       </div>    
+     <div class="song">
+         <audio id="myAudio1" src="AUR - SHIKAYAT - Raffey - Usama - Ahad (Official Music Video).mp3"></audio>
+         <h1>SHIKAYAT</h1> 
+         <button class="btn1" onclick="playAudio1();">play</button>     
+       </div>
+       <div class="song">
+         <audio id="myAudio4" src="Downers At Dusk - Talha Anjum Prod. by Umair (Official Music Video).mp3"></audio>
+         <h1>Downers At Dusk</h1> 
+         <button class="btn1" onclick="playAudio4();">play</button>     
+       </div>
+   
+       <div class="song">
+         <audio id="myAudio5" src="LLAJAWAB - TAIMOUR BAIG Prod. Dizzla D Beats (Official Lyrical Video).mp3"></audio>
+         <h1>LAJAWAB</h1> 
+         <button class="btn1" onclick="playAudio5();">play</button>     
+       </div>
+       <div class="song">
+         <audio id="myAudio6" src="Jevin Gill, Talha Anjum - Regrets (Official Audio) Prod. by Umair.mp3"></audio>
+         <h1>Regrets</h1> 
+         <button class="btn1" onclick="playAudio6();">play</button>     
+       </div>
+   
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
